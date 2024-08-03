@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'BYekan';
+    src: url('assets/font/iranyekan_medium.eot') format('eot'), url('assets/font/iranyekan_medium.ttf') format('ttf'), url('assets/font/iranyekan_medium.woff') format('woff');
+}
+
+:root {
+    --light: #dfe6e9;
+    --light1: rgb(241, 241, 241);
+    --dark: #2d3436;
+    --dark-1: #636e72;
+    --blue: #0984e3;
+    --red: #d63031;
+    --light-red: #ff7675;
+    --light-green: #55efc4;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(160deg, #fab1a0 10%, #81ecec 90%);
+    height: 100vh;
+}
+
+* {
+    font-family: 'BYekan', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-silver {
+    background-color: var(--light1);
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+#root {
+    height: 100%;
+}
+
+.App {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.yourShares {
+    height: 90%;
+}
+
+table {
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+tbody {
+    display: block;
+    height: 320px;
+    overflow: auto;
+}
+
+thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table th {
+    font-size: 16px;
+    padding: 10px 0 !important;
+}
+
+table td {
+    font-size: 14px;
+    padding: 8px 0 !important;
+}
+
+.right .total {
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid var(--dark-1);
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.indicators * {
+    z-index: 3;
+}
+
+.bar {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.bar-red {
+    background-color: var(--light-red);
+}
+
+.bar-green {
+    background-color: var(--light-green);
+}
